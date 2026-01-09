@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>安知鱼主题安装</title>
+      <link href="/posts/d153.html"/>
+      <url>/posts/d153.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h1><h2 id="搭建-Hexo-博客"><a href="#搭建-Hexo-博客" class="headerlink" title="搭建 Hexo 博客"></a>搭建 Hexo 博客</h2><h4 id="如果你还没有-Hexo-博客，请按照-Hexo-官方文档-进行安装、建站。"><a href="#如果你还没有-Hexo-博客，请按照-Hexo-官方文档-进行安装、建站。" class="headerlink" title="如果你还没有 Hexo 博客，请按照 Hexo 官方文档 进行安装、建站。"></a>如果你还没有 Hexo 博客，请按照 Hexo 官方文档 进行安装、建站。</h4><p>本指南不包括所有的配置说明，几乎每个配置在主题配置中都有注释，可配合指南共同参考使用。</p><p>另外本指南仅包含主题范围内的使用说明，如果是 Hexo 的使用或者 Hexo 插件的使用，请查阅各自的文档。</p><p>若存在其他主题相关的疑问请在 issues 留言。</p><h2 id="主题安装-1"><a href="#主题安装-1" class="headerlink" title="主题安装"></a>主题安装</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">温馨提示</span><br><span class="line"></span><br><span class="line">Anzhiyu主题拥有Main(稳定版)和Dev(测试版)两种版本, 我们推荐您安装使用Github(稳定版)以获得最佳的主题体验</span><br></pre></td></tr></table></figure><h3 id="方式一-Github-推荐"><a href="#方式一-Github-推荐" class="headerlink" title="方式一(Github 推荐):"></a>方式一(Github 推荐):</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b main https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><p>如遇安装不上可以使用以下url代理安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b main https://ghproxy.com/https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><h3 id="方式二-npm安装"><a href="#方式二-npm安装" class="headerlink" title="方式二(npm安装):"></a>方式二(npm安装):</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-theme-anzhiyu</span><br></pre></td></tr></table></figure><p>此方法只支持 Hexo 5.0.0 以上版本 通过 npm 安装并不会在 themes 里生成主题文件夹，而是在 node_modules 里生成</p><h3 id="测试版Dev"><a href="#测试版Dev" class="headerlink" title="测试版Dev"></a>测试版Dev</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b dev https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu</span><br></pre></td></tr></table></figure><p>测试版可能存在 bug，追求稳定的请安装稳定版</p><h2 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h2><p>打开 Hexo 根目录下的 config.yml, 找到以下配置项，把主题改为anzhiyu</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. # Extensions</span><br><span class="line">2. ## Plugins: https://hexo.io/plugins/</span><br><span class="line">3. ## Themes: https://hexo.io/themes/</span><br><span class="line">4. theme: anzhiyu</span><br></pre></td></tr></table></figure><h2 id="安装-pug-和-stylus-渲染插件"><a href="#安装-pug-和-stylus-渲染插件" class="headerlink" title="安装 pug 和 stylus 渲染插件"></a>安装 pug 和 stylus 渲染插件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><p>无法安装可以使用cnpm进行安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save --registry=http://registry.npmmirror.com</span><br></pre></td></tr></table></figure><h2 id="本地启动-hexo"><a href="#本地启动-hexo" class="headerlink" title="本地启动 hexo"></a>本地启动 hexo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. hexo cl</span><br><span class="line">2. hexo g</span><br><span class="line">3. hexo s</span><br></pre></td></tr></table></figure><p>此时就能在看到效果了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安知鱼主题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 安知鱼 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>github网站注册</title>
+      <link href="/posts/224d.html"/>
+      <url>/posts/224d.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-打开github官网"><a href="#1-打开github官网" class="headerlink" title="1. 打开github官网"></a>1. 打开github官网</h3><p>打开浏览器搜索github.com<br>页面会显示github主页<br>右上角可以看到一个”Sign up”注册按钮</p><h3 id="2-填写注册信息"><a href="#2-填写注册信息" class="headerlink" title="2. 填写注册信息"></a>2. 填写注册信息</h3><p>点击”Sign up”<br>进入注册页面<br>填写你的邮箱密码用户名<br>进行人机验证<br>提交注册信息<br>之后github会向你的邮箱发送一篇邮件 找到后输入邮件给的验证码<br>完成邮箱验证后，注册成功</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> github </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+            <tag> 网站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo增添公告栏计时器小部件</title>
       <link href="/posts/fd28.html"/>
       <url>/posts/fd28.html</url>
@@ -46,30 +102,11 @@
       
         <tags>
             
-            <tag> -hexo -诗词 -主题 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Butterfly添加侧边栏电子钟</title>
-      <link href="/posts/3357.html"/>
-      <url>/posts/3357.html</url>
-      
-        <content type="html"><![CDATA[<p>效果如下所示</p><p><img src="/img/clock.jpg"></p><p>如果有安装店长的插件版侧边栏电子钟（与店长的电子钟冲突），在博客根目录[Blog]下打开终端，运行以下指令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 卸载原版电子钟</span><br><span class="line">npm uninstall hexo-butterfly-clock</span><br></pre></td></tr></table></figure><p>安装插件,在博客根目录[Blogroot]下打开终端，运行以下指令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-butterfly-clock-anzhiyu --save</span><br></pre></td></tr></table></figure><p>添加配置信息，以下为写法示例在站点配置文件_config.yml或者主题配置文件_config.butterfly.yml中添加</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># electric_clock</span><br><span class="line"># see https://anzhiy.cn/posts/fc18.html</span><br><span class="line">electric_clock:</span><br><span class="line">  enable: true # 开关</span><br><span class="line">  priority: 5 #过滤器优先权</span><br><span class="line">  enable_page: all # 应用页面</span><br><span class="line">  exclude:</span><br><span class="line">  # - /posts/</span><br><span class="line">  # - /about/</span><br><span class="line">  layout: # 挂载容器类型</span><br><span class="line">    type: class</span><br><span class="line">    name: sticky_layout</span><br><span class="line">    index: 0</span><br><span class="line">  loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义</span><br><span class="line">  clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css</span><br><span class="line">  clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js</span><br><span class="line">  ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0</span><br><span class="line">  qweather_key: # 和风天气key</span><br><span class="line">  gaud_map_key: # 高得地图web服务key</span><br><span class="line">  default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气</span><br><span class="line">  rectangle: 112.982279,28.19409 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置</span><br></pre></td></tr></table></figure><p>其中qweather_key 和gaud_map_key 最好自己去申请对应的 api key，默认使用我自己的，可能会被限制，不保证可靠性。</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 时钟 </tag>
-            
             <tag> 主题 </tag>
             
             <tag> hexo </tag>
+            
+            <tag> 诗词 </tag>
             
         </tags>
       
@@ -84,6 +121,12 @@
       
         <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在你的 Hexo 根目录里</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure><h4 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h4><p>修改 Hexo 根目录下的 ，把主题改为 <code>_config.ymlbutterfly</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>如果你没有 pug 以及 stylus 的渲染器，请下载安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure><h4 id="导航目录"><a href="#导航目录" class="headerlink" title="导航目录"></a>导航目录</h4><p>即设置顶部右上方区域的这块内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># Menu 目录</span><br><span class="line">menu:</span><br><span class="line">  首页: / || fas fa-home</span><br><span class="line">  归档: /archives/ || fas fa-archive</span><br><span class="line">  标签: /tags/ || fas fa-tags</span><br><span class="line">  分类: /categories/ || fas fa-folder-open</span><br><span class="line">  友链: /link/ || fas fa-link</span><br><span class="line">  关于: /about/ || fas fa-heart</span><br><span class="line"># 格式如下：</span><br><span class="line"># [标题]: [路径] || [图标]</span><br></pre></td></tr></table></figure><p>这里的目录中，<code>tags</code>、<code>categories</code>、<code>link</code>、<code>about</code>目录默认不存在，需要在CMD窗口中使用命令生成对应页面</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page link</span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure><p>之后给创建的页面设置成对应的页面类型</p><h4 id="启用本地搜索"><a href="#启用本地搜索" class="headerlink" title="启用本地搜索"></a>启用本地搜索</h4><p>安装插件</p><p>安装 <code>hexo-generator-search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure><p>在主题<code>_config.yml</code> 文件中添加<code>local_search</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  # Choose: algolia_search / local_search / docsearch</span><br><span class="line">  # leave it empty if you don&#x27;t need search</span><br><span class="line">  use: local_search</span><br><span class="line">  placeholder:</span><br></pre></td></tr></table></figure>]]></content>
       
+      
+      <categories>
+          
+          <category> butterfly </category>
+          
+      </categories>
       
       
         <tags>
@@ -134,7 +177,9 @@
       
         <tags>
             
-            <tag> -hexo -链接 </tag>
+            <tag> hexo </tag>
+            
+            <tag> 链接 </tag>
             
         </tags>
       
